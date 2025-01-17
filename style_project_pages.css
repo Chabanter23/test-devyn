@@ -1,0 +1,188 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* Lichtgrijze achtergrond */
+    color: #333; /* Donkere tekstkleur */
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.hero-section {
+    height: 100vh;
+    background-color: #f1f1f1; /* Lichtere achtergrond voor de bovenkant */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    padding: 12px 40px;
+    background-color: #007bff;
+    color: #333333;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.hero-content .btn:hover {
+    background-color: #0056b3;
+}
+
+section {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+section p {
+    font-size: 16px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #333333;
+}
+
+.project-cards {
+    display: flex; /* Plaats de kaarten naast elkaar */
+    flex-wrap: wrap; /* Laat de kaarten naar een nieuwe regel gaan als er niet genoeg ruimte is */
+    justify-content: center; /* Centreer de kaarten horizontaal */
+    gap: 20px; /* Ruimte tussen de kaarten */
+    padding: 20px;
+}
+
+.card {
+    width: 250px; /* Geef een vaste breedte aan de kaarten */
+    height: 150px; /* Geef een vaste hoogte aan de kaarten */
+    background-color: #ffffff; /* Witte achtergrond */
+    border: 1px solid #ddd; /* Lichtgrijze rand */
+    border-radius: 10px; /* Afronde hoeken */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Zachte schaduw */
+    display: flex; /* Gebruik flexbox om de inhoud te centreren */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Vergroot de kaart lichtjes bij hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Donkere schaduw bij hover */
+}
+
+.card a {
+    text-decoration: none; /* Verwijder standaard linkstijlen */
+    color: #333; /* Donkere tekstkleur */
+    font-size: 18px; /* Maak de tekst goed leesbaar */
+    font-weight: bold; /* Geef de tekst extra nadruk */
+}
+
+.card a:hover {
+    color: #007BFF; /* Blauwe tekstkleur bij hover */
+}
+
+
+.card-content h3 {
+    font-size: 24px; /* Grotere tekst */
+    font-weight: bold; /* Vetgedrukt */
+    margin: 0; /* Geen extra marges rondom de tekst */
+}
+
+
+
+footer {
+    background-color: #121212; /* Donkerdere kleur */
+    color: #dfe6e9; /* Lichtere tekstkleur voor betere leesbaarheid */
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #8e44ad; /* Accentkleur behouden */
+}
+
+footer a {
+    color: #8e44ad;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 5px 0; /* Voeg wat ruimte toe tussen de paragrafen */
+    font-size: 16px;
+}
